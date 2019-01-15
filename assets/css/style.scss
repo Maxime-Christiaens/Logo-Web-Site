@@ -1,0 +1,125 @@
+//Ajout de la font Politica
+@font-face {
+    font-family: 'Politica';
+    src: url('Politica.ttf');
+}
+
+
+body{
+    font-family: 'Politica', sans-serif;
+    width: 100%;
+    .flower{
+        position: absolute;
+        top : 7vh;
+        }   
+    }
+//enlever margin et padding
+.mp0{
+    margin : 0!important;
+    padding : 0!important;
+}
+//bg color
+.bgcolor{
+    background: linear-gradient(to left, #7f7fd5, #86a8e7, #91eae4)!important;
+}
+//Color d'écriture noir
+.bl{
+    color:black!important;
+}
+//
+.shadow{
+    box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.14), 1px 3px 1px -2px rgba(0, 0, 0, 0.12), 5px 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+//
+.bold{
+    font-weight: bold;
+}
+////////////
+//nav - bar
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+/////////////////
+//SVG - logopède 
+svg{
+    //width: 200px;
+}
+path{
+    opacity:1;
+    fill:none;
+    stroke:black;
+    stroke-width:3; //largueur de l'écriture
+    stroke-dasharray: 3000; 
+    animation: noir 6s cubic-bezier(.455,.03,.515,.955) forwards;    
+            }
+.vague{
+    stroke-width:50.5px; //largeur du trait 
+    animation: rien 1.5s cubic-bezier(.455,.03,.515,.955) forwards;
+}
+
+@mixin moove ($name, $color) {
+    @keyframes #{$name} {
+        0% {
+            stroke-dashoffset: 3000;
+            fill:none
+        }
+        44%{
+            //fill:$color;
+        }
+        100% {
+            stroke-dashoffset: 0;
+            //fill:$color;
+        }
+    }
+}
+@include moove(noir, black);
+@include moove(rien, none);
+//////////////////////////
+// Section 0 = First page
+.section0{
+    //height: 100vh;
+    width: 100%;
+    text-align: center;
+    //background-image: url("../img/nuage.jpg");
+    a{
+        color: white;
+        size: 25px!important;
+    }
+    .part0{
+        width: 100%;
+        background: linear-gradient(to left, #7f7fd5, #86a8e7, #91eae4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        margin-bottom: 0%!important;
+
+        //height: 50%!important;
+    }
+    //section avec les infos sur l'adresse, le téléphone et l'email
+    .part1{
+        width: 100%; 
+        padding-top : 3vh;
+        margin : 0!important;
+        box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.14), 1px 3px 1px -2px rgba(0, 0, 0, 0.12), 5px 1px 5px 0 rgba(0, 0, 0, 0.2);
+        .box2{
+            border-right: 1.5px solid black;
+            border-left: 1.5px solid black;
+    }
+}
+    .part2{
+        margin-bottom: 65.9px; //correspond à l'espace pris par le h3 Mes Spécialisations aux dessus des callapsides
+        .halfLeft{
+            background: linear-gradient(to left, #7f7fd5, #86a8e7, #91eae4);
+        }
+}
+    .part3{
+        .infoMoney{
+            margin-top: 2vh!important;
+            margin-bottom: 2vh!important;
+        }
+}
+    footer{
+        a{
+            color: black!important;
+        }
+}
+}

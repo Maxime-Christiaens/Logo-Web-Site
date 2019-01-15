@@ -1,0 +1,157 @@
+@font-face {
+  font-family: 'Politica';
+  src: url("Politica.ttf");
+}
+
+body {
+  font-family: 'Politica', sans-serif;
+  width: 100%;
+}
+
+body .flower {
+  position: absolute;
+  top: 7vh;
+}
+
+.mp0 {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.bgcolor {
+  background: -webkit-gradient(linear, right top, left top, from(#7f7fd5), color-stop(#86a8e7), to(#91eae4)) !important;
+  background: linear-gradient(to left, #7f7fd5, #86a8e7, #91eae4) !important;
+}
+
+.bl {
+  color: black !important;
+}
+
+.shadow {
+  -webkit-box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.14), 1px 3px 1px -2px rgba(0, 0, 0, 0.12), 5px 1px 5px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.14), 1px 3px 1px -2px rgba(0, 0, 0, 0.12), 5px 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+path {
+  opacity: 1;
+  fill: none;
+  stroke: black;
+  stroke-width: 3;
+  stroke-dasharray: 3000;
+  -webkit-animation: noir 6s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+          animation: noir 6s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+}
+
+.vague {
+  stroke-width: 50.5px;
+  -webkit-animation: rien 1.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+          animation: rien 1.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+}
+
+@-webkit-keyframes noir {
+  0% {
+    stroke-dashoffset: 3000;
+    fill: none;
+  }
+  44% {
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes noir {
+  0% {
+    stroke-dashoffset: 3000;
+    fill: none;
+  }
+  44% {
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes rien {
+  0% {
+    stroke-dashoffset: 3000;
+    fill: none;
+  }
+  44% {
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes rien {
+  0% {
+    stroke-dashoffset: 3000;
+    fill: none;
+  }
+  44% {
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.section0 {
+  width: 100%;
+  text-align: center;
+}
+
+.section0 a {
+  color: white;
+  size: 25px !important;
+}
+
+.section0 .part0 {
+  width: 100%;
+  background: -webkit-gradient(linear, right top, left top, from(#7f7fd5), color-stop(#86a8e7), to(#91eae4));
+  background: linear-gradient(to left, #7f7fd5, #86a8e7, #91eae4);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin-bottom: 0% !important;
+}
+
+.section0 .part1 {
+  width: 100%;
+  padding-top: 3vh;
+  margin: 0 !important;
+  -webkit-box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.14), 1px 3px 1px -2px rgba(0, 0, 0, 0.12), 5px 1px 5px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.14), 1px 3px 1px -2px rgba(0, 0, 0, 0.12), 5px 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.section0 .part1 .box2 {
+  border-right: 1.5px solid black;
+  border-left: 1.5px solid black;
+}
+
+.section0 .part2 {
+  margin-bottom: 65.9px;
+}
+
+.section0 .part2 .halfLeft {
+  background: -webkit-gradient(linear, right top, left top, from(#7f7fd5), color-stop(#86a8e7), to(#91eae4));
+  background: linear-gradient(to left, #7f7fd5, #86a8e7, #91eae4);
+}
+
+.section0 .part3 .infoMoney {
+  margin-top: 2vh !important;
+  margin-bottom: 2vh !important;
+}
+
+.section0 footer a {
+  color: black !important;
+}
+/*# sourceMappingURL=style.css.map */
